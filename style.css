@@ -26,3 +26,39 @@ input[readonly]{background:#edf5fa;color:#285e7e;border-color:#d3e4ef;font-weigh
 .button{min-height:44px}.text-button{min-height:32px}.readiness{background:#fff7e3;border-color:#f0dfac;color:#876320}.readiness.ready{background:#dff5e9;color:#166b49;border-color:#bfe4d0}
 footer>div{color:#286978;font-weight:600}footer{gap:16px;line-height:1.6}.tip strong{color:#287185}
 @media(max-width:560px){.section-title{flex-wrap:wrap}.section-title>div{flex:1;min-width:0}.count{margin-left:50px}.preview-head{flex-wrap:wrap}.fields{gap:18px}.card{padding:19px 16px}.source-bar{flex-wrap:wrap}.preview-head h2{font-size:18px}.action-row{flex-direction:column}.button{padding:13px 16px}}
+.header-actions{display:flex;align-items:center;gap:16px}.theme-toggle{background:white;border-color:#cbdde5;color:#24576c;white-space:nowrap;font-size:13px;padding:9px 12px}.theme-toggle:hover{background:#e6f3f6}
+html[data-theme=dark]{color-scheme:dark;--border:#35465c;color:#e3eaf3;background:#0f1826}
+html[data-theme=dark] body{background:linear-gradient(135deg,#101e2a,#151d32 55%,#102b30)}
+html[data-theme=dark] .sidebar{background:linear-gradient(165deg,#0b2133,#133943 70%,#10504a)}
+html[data-theme=dark] h1,html[data-theme=dark] h2{color:#edf3fc}
+html[data-theme=dark] .card{background:#1b293c;border-right-color:#35465c;border-bottom-color:#35465c;border-left-color:#35465c}
+html[data-theme=dark] label{color:#d5e0eb}
+html[data-theme=dark] input:not([type=checkbox]),html[data-theme=dark] select,html[data-theme=dark] textarea{background:#132033;border-color:#41546a;color:#e4edf7}
+html[data-theme=dark] input[readonly]{background:#21394c;border-color:#3a5870;color:#aee0fb}
+html[data-theme=dark] input::placeholder,html[data-theme=dark] textarea::placeholder{color:#9eafc3}
+html[data-theme=dark] .section-title p,html[data-theme=dark] .helper,html[data-theme=dark] .optional,html[data-theme=dark] .breadcrumb,html[data-theme=dark] .privacy,html[data-theme=dark] .page-heading p,html[data-theme=dark] .export-note,html[data-theme=dark] footer,html[data-theme=dark] .tip{color:#b2c2d4}
+html[data-theme=dark] .eyebrow,html[data-theme=dark] .page-heading .eyebrow{color:#7bdbd1}
+html[data-theme=dark] .source-bar{background:#322c4a;border-color:#51466c;color:#e1d8f4}
+html[data-theme=dark] .source-bar>span:last-of-type{color:#c0b5d7}
+html[data-theme=dark] .source-bar .text-button{background:#443761;border-color:#665080;color:#eadfff}
+html[data-theme=dark] .count{background:#3d3158;color:#dac6fc}
+html[data-theme=dark] .ticket-row{border-color:#35445b}html[data-theme=dark] .ticket-row span{color:#c2cfe0}
+html[data-theme=dark] .ticket-row strong{background:#174b48;color:#9be0d2}
+html[data-theme=dark] .check-row{background:#1b3e38;border-color:#355b4c}html[data-theme=dark] .check-row small{color:#b0d1c3}
+html[data-theme=dark] .preview-card{background:#18273a;border-color:#375066}
+html[data-theme=dark] .preview-head{background:linear-gradient(115deg,#204541,#293950)}
+html[data-theme=dark] .live-label{background:#1c393b;color:#b4e3dc;border-color:#4c7773}
+html[data-theme=dark] .tabs{border-color:#384a61}html[data-theme=dark] .tabs button{color:#c0ccdc}
+html[data-theme=dark] .tabs button.active{background:#284452;color:#9ce9eb;border-bottom-color:#65d3d3}
+/* Keep the document white so the preview reflects the exported handoff. */
+html[data-theme=dark] .paper,html[data-theme=dark] #raw{background:#fff;color:#273f4e;color-scheme:light}
+html[data-theme=dark] .readiness{background:#423a28;border-color:#6e5b32;color:#f0d597}
+html[data-theme=dark] .readiness.ready{background:#214639;border-color:#396f55;color:#afe8c9}
+html[data-theme=dark] .subtle,html[data-theme=dark] .theme-toggle{background:#22364a;border-color:#456078;color:#d6e8f6}
+html[data-theme=dark] .subtle:hover,html[data-theme=dark] .theme-toggle:hover{background:#2d4961}
+html[data-theme=dark] .primary{background:#087e98;color:white}html[data-theme=dark] .primary:hover{background:#0993ac}
+html[data-theme=dark] .secondary{background:#392f53;border-color:#6c588d;color:#e0d2fb}html[data-theme=dark] .secondary:hover{background:#4c3e6b}
+html[data-theme=dark] .tip strong,html[data-theme=dark] footer>div{color:#96d9d3}
+html[data-theme=dark] .parse-warning{color:#f1c67f}
+@media(max-width:560px){.header-actions .privacy{display:none}.header-actions{gap:0}.theme-toggle{font-size:12px;padding:8px 10px}.breadcrumb{font-size:12px}.breadcrumb span{margin:0 5px}}
+@media print{html[data-theme=dark] body,html[data-theme=dark] .preview-card{background:white}}
